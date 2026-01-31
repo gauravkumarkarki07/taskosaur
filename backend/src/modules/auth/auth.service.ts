@@ -49,6 +49,12 @@ export class AuthService {
   }
 
   async login(loginDto: LoginDto): Promise<AuthResponseDto> {
+    const authorizedEmail = loginDto.email === this.configService.getOrThrow<string>('ADMIN_EMAIL');
+
+    if (!authorizedEmail) {
+      throw new UnauthorizedException('Registration is restricted to authorized emails only');
+    }
+
     const user = await this.validateUser(loginDto.email, loginDto.password);
     if (!user) {
       throw new UnauthorizedException('Invalid credentials');
@@ -87,6 +93,14 @@ export class AuthService {
 
   async register(registerDto: RegisterDto): Promise<AuthResponseDto> {
     // Check if user already exists
+
+    const authorizedEmail =
+      registerDto.email === this.configService.getOrThrow<string>('ADMIN_EMAIL');
+
+    if (!authorizedEmail) {
+      throw new UnauthorizedException('Registration is restricted to authorized emails only');
+    }
+
     const existingUser = await this.usersService.findByEmail(registerDto.email);
     if (existingUser) {
       throw new ConflictException('User with this email already exists');
