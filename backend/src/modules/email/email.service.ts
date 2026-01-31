@@ -280,7 +280,7 @@ export class EmailService {
         }
 
         if (recentActivity?.oldValue) {
-          const oldValue = recentActivity.oldValue as any;
+          const oldValue = recentActivity.oldValue;
           let statusId: string | undefined;
           if (oldValue.statusId) {
             statusId = oldValue.statusId;

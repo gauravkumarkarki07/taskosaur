@@ -22,43 +22,49 @@ Fixes #(issue number)
 ## Testing
 
 **How has this been tested?**
+
 - [ ] Unit tests
 - [ ] Integration tests
 - [ ] Manual testing
 - [ ] Existing tests pass
 
 **Test Configuration:**
-- Node.js version: 
-- Browser (if frontend): 
-- OS: 
+
+- Node.js version:
+- Browser (if frontend):
+- OS:
 
 ## Screenshots (if applicable)
 
 Add screenshots to help reviewers understand the changes.
 
-| Before | After |
-|--------|--------|
+| Before         | After         |
+| -------------- | ------------- |
 | ![Before](url) | ![After](url) |
 
 ## Checklist
 
 **Code Quality:**
+
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
 - [ ] My changes generate no new warnings or errors
 
 **Testing:**
+
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass locally with my changes
 - [ ] I have tested the changes manually
 
 **Documentation:**
+
 - [ ] I have made corresponding changes to the documentation
 - [ ] I have updated the CHANGELOG.md if needed
 - [ ] Any new environment variables are documented
 
 **Dependencies:**
+
 - [ ] I have checked that my changes don't introduce security vulnerabilities
 - [ ] I have updated package.json dependencies if needed
 - [ ] I have run `npm audit` and resolved any issues
@@ -66,6 +72,7 @@ Add screenshots to help reviewers understand the changes.
 ## Code Review Guidelines
 
 **For Reviewers:**
+
 - [ ] Code follows project conventions
 - [ ] Changes are well-tested
 - [ ] Documentation is updated
@@ -75,6 +82,7 @@ Add screenshots to help reviewers understand the changes.
 ## Deployment Notes
 
 **Any special deployment considerations?**
+
 - [ ] Requires database migration
 - [ ] Requires environment variable changes
 - [ ] Requires cache clearing
@@ -84,6 +92,7 @@ Add screenshots to help reviewers understand the changes.
 ## Impact Assessment
 
 **What areas of the application are affected?**
+
 - [ ] Frontend UI
 - [ ] Backend API
 - [ ] Database schema
@@ -106,6 +115,7 @@ Credit any collaborators, resources, or inspirations that helped with this PR.
 ---
 
 **By submitting this pull request, I confirm that:**
+
 - [ ] I have read and agree to the [Contributing Guidelines](CONTRIBUTING.md)
 - [ ] My code follows the project's coding standards
 - [ ] I understand this contribution will be licensed under the project's MIT license
